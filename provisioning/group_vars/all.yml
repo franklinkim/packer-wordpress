@@ -1,0 +1,142 @@
+---
+
+##
+# apt
+##
+apt_packages:
+  - build-essential
+  - curl
+  - ghostscript
+  - htop
+  - imagemagick
+  - libyaml-dev
+  - memcached
+  - screen
+  - tree
+  - unzip
+  - wget
+  - zip
+##
+# environment
+##
+environment_config:
+  LANG: en_US.UTF-8
+  LANGUAGE: en_US.UTF-8
+  LC_ALL: en_US.UTF-8
+##
+# git
+##
+git_config:
+  core:
+    editor: vim
+  color:
+    diff: auto
+    branch: auto
+    status: auto
+    interactive: auto
+  push:
+    default: matching
+##
+# mysql
+##
+mysql_root_password: ''
+mysql_bind_address: 0.0.0.0
+##
+# nodejs
+##
+nginx_remove_default: yes
+##
+# nodejs
+##
+nodejs_packages:
+  - bower
+##
+# openssl
+##
+openssl_self_signed:
+  - name: 'foo.bar'
+    domains: ['*.foo.bar', 'foo.bar']
+    country: 'DE'
+    state: 'Bavaria'
+    city: 'Munich'
+    organization: 'Foo Bar'
+    unit: ''
+    email: 'foobar@dev.null'
+    days: 3650
+##
+# php5
+##
+php5_packages:
+  - php5-dev
+  - php5-cli
+  - php5-fpm
+  - php-pear
+php5_modules:
+  - { name: gd, config: [] }
+  - { name: imap, config: [] }
+  - { name: curl, config: [] }
+  - { name: json, config: [] }
+  - { name: mcrypt, config: [] }
+  - { name: xdebug, config: [] }
+  - { name: imagick, config: [] }
+  - { name: mysqlnd, config: [] }
+  - { name: mail, type: 'php', config: [] }
+  - { name: net-smtp, type: 'php', config: [] }
+  - { name: mail-mime, type: 'php', config: [] }
+php5_cli_config:
+  - { section: PHP, option: short_open_tag, value: 'On' }
+  - { section: PHP, option: default_charset, value: UTF-8 }
+  - { section: PHP, option: error_log, value: /var/log/php5/cli_error.log }
+  - { section: Date, option: date.timezone, value: 'Europe/Berlin' }
+php5_fpm_config:
+  - { section: PHP, option: expose_php, value: 'Off' }
+  - { section: PHP, option: memory_limit, value: 128M }
+  - { section: PHP, option: short_open_tag, value: 'On' }
+  - { section: PHP, option: default_charset, value: UTF-8 }
+  - { section: PHP, option: max_execution_time, value: 60 }
+  - { section: PHP, option: upload_max_filesize, value: 10M }
+  - { section: PHP, option: error_log, value: /var/log/php5/fpm_error.log }
+  - { section: Date, option: date.timezone, value: 'Europe/Berlin' }
+  - { section: XDebug, option: xdebug.remote_connect_back, value: 1 }
+  - { section: XDebug, option: xdebug.remote_port, value: 9000 }
+  - { section: XDebug, option: xdebug.idekey, value: PhpStorm }
+  - { section: XDebug, option: xdebug.remote_enable, value: 1 }
+  - { section: Date, option: date.timezone, value: Europe/Berlin }
+  - { section: Opcache, option: opcache.enable, value: 0 }
+  - { section: CGI, option: cgi.fix_pathinfo, value: 0 }
+##
+# ssh
+##
+ssh_known_hosts:
+  - github.com
+  - bitbucket.org
+##
+# timezone
+##
+timezone: 'Europe/Berlin'
+##
+# vim
+##
+vim_config:
+  - "set tabstop=2"
+  - "set shiftwidth=2"
+  - "set softtabstop=2"
+  - "set backspace=indent,eol,start"
+  - "set expandtab"
+  - "set autoindent"
+  - "set smartindent"
+  - "set smarttab"
+  - "set nonumber"
+  - "set ruler"
+  - "set showmatch"
+  - "set hlsearch"
+  - "set modeline"
+  - "set encoding=utf-8"
+  - "set paste"
+  - "set ignorecase"
+  - "set nobackup"
+  - "set noswapfile"
+  - "set autoread"
+  - "set smartcase"
+  - "set incsearch"
+  - "syntax enable"
