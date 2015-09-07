@@ -1,0 +1,45 @@
+[submodule "provisioning/roles/franklinkim.apt"]
+	path = provisioning/roles/franklinkim.apt
+	url = https://github.com/weareinteractive/ansible-apt.git
+[submodule "provisioning/roles/franklinkim.ntp"]
+	path = provisioning/roles/franklinkim.ntp
+	url = https://github.com/weareinteractive/ansible-ntp.git
+[submodule "provisioning/roles/franklinkim.git"]
+	path = provisioning/roles/franklinkim.git
+	url = https://github.com/weareinteractive/ansible-git.git
+[submodule "provisioning/roles/franklinkim.ssh"]
+	path = provisioning/roles/franklinkim.ssh
+	url = https://github.com/weareinteractive/ansible-ssh.git
+[submodule "provisioning/roles/franklinkim.vim"]
+	path = provisioning/roles/franklinkim.vim
+	url = https://github.com/weareinteractive/ansible-vim.git
+[submodule "provisioning/roles/franklinkim.timezone"]
+	path = provisioning/roles/franklinkim.timezone
+	url = https://github.com/weareinteractive/ansible-timezone.git
+[submodule "provisioning/roles/franklinkim.environment"]
+	path = provisioning/roles/franklinkim.environment
+	url = https://github.com/weareinteractive/ansible-environment.git
+[submodule "provisioning/roles/franklinkim.mysql"]
+	path = provisioning/roles/franklinkim.mysql
+	url = https://github.com/weareinteractive/ansible-mysql.git
+[submodule "provisioning/roles/franklinkim.openssl"]
+	path = provisioning/roles/franklinkim.openssl
+	url = https://github.com/weareinteractive/ansible-openssl.git
+[submodule "provisioning/roles/franklinkim.htpasswd"]
+	path = provisioning/roles/franklinkim.htpasswd
+	url = https://github.com/weareinteractive/ansible-htpasswd.git
+[submodule "provisioning/roles/franklinkim.php5"]
+	path = provisioning/roles/franklinkim.php5
+	url = https://github.com/weareinteractive/ansible-php5.git
+[submodule "provisioning/roles/franklinkim.nginx"]
+	path = provisioning/roles/franklinkim.nginx
+	url = https://github.com/weareinteractive/ansible-nginx.git
+[submodule "provisioning/roles/franklinkim.nodejs"]
+	path = provisioning/roles/franklinkim.nodejs
+	url = https://github.com/weareinteractive/ansible-nodejs.git
+[submodule "provisioning/roles/franklinkim.composer"]
+	path = provisioning/roles/franklinkim.composer
+	url = https://github.com/weareinteractive/ansible-composer.git
+[submodule "provisioning/library/sshknownhosts"]
+	path = provisioning/library/sshknownhosts
+	url = https://github.com/bfmartin/ansible-sshknownhosts.git
